@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom css file path -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hegaja | Front-end Developer</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class=" black z-depth-0">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- <a href="#!" class="brand-logo">Logo</a> -->
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <!-- <ul class="right hide-on-med-and-down">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">Javascript</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#"><i class="material-icons">home</i>Home</a></li>
+            <li><a href="#"><i class="material-icons">menu</i>Skills</a></li>
+            <li><a href="#"><i class="material-icons">settings</i>Work</a></li>
+            <li><a href="#"><i class="material-icons">contact_mail</i>Contact</a></li>
+        </ul>
+    </header>
+    <div class="container black text-white">
+
+        <div class="row">
+            <div class="col hide-on-small-only m3 l2 ">
+                <ul class=" section table-of-contents fixed">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Work">Work</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col s12 m9 l10 ">
+                <div id="Home" class="section scrollspy center-align">
+                    <h1>Hegaja</h1>
+                    <p>Web Developer</p>
+
+                </div>
+
+                <div id="Skills" class="section scrollspy">
+                    <h2> Skills </h2>
+                    <p>HTML5 &#8729 CSS3 &#8729 UI &#8729 UX &#8729 MaterializeCSS </p>
+                </div>
+
+                <div id="Work" class="section scrollspy">
+                    <h2> Portfolio</h2>
+                    <p>Content </p>
+                </div>
+
+                <div id="Contact" class="section scrollspy">
+                    <h2>Contact</h2>
+                    <p>Content </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer blue-grey darken-3 text-white center">
+        Hegaja
+
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // mobile menu
+            $('.sidenav').sidenav();
+            //scrollspy (big menu)
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 0}
+            );
+        });
+    </script>
+</body>
+
+</html>
